@@ -8,9 +8,8 @@ var checker = function(string){
 			return console.log("The string is not unique.")
 		} else if (!checkedLetters.includes(letter) && i + 1 === string.length) {
 			return console.log("The string is unique")
-		} else {
-			checkedLetters += letter
 		}
+	checkedLetters += letter
 	}
 }
 
