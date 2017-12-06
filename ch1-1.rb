@@ -1,13 +1,15 @@
-## Cracking the Code Algorithm 1.1
+## check if a string has unique characters
 
 def checker(string)
   checked_letters = ""
   string.each_char do |letter|
     if checked_letters.include?(letter)
-      return "The string is not unique"
-    else
+      return false
+		end
       checked_letters += letter
-    end
-      "The string is unique!"
   end
+  true
 end
+
+p checker("aaa")
+p checker("abc")

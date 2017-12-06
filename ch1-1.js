@@ -5,14 +5,12 @@ var checker = function(string){
 	for (var i = 0; i < string.length; i++){
 		var letter = string.charAt(i)
 		if (checkedLetters.includes(letter)){
-			return console.log("The string is not unique.")
-		} else if (!checkedLetters.includes(letter) && i + 1 === string.length) {
-			return console.log("The string is unique")
+			return false
 		}
-	checkedLetters += letter
+			checkedLetters += letter
 	}
+	return true
 }
 
-
-checker("aaa")
-checker("abc")
+// console.log(checker("aaa"))
+// console.log(checker("abc"))
