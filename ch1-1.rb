@@ -11,5 +11,5 @@ def checker(string)
   true
 end
 
-p checker("aaa")
-p checker("abc")
+# p checker("aaa")
+# p checker("abc")
